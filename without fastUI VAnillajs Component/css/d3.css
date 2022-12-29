@@ -1,0 +1,89 @@
+.axis {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+text {
+  fill: black;
+  stroke: none;
+}
+
+.axis path,
+.axis line {
+  /* fill: none; */
+  /* stroke: none; */
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke: none;
+}
+
+.grid line {
+  stroke: #e0e0e0;
+  shape-rendering: crispEdges;
+}
+
+.data-line {
+  fill: none;
+  stroke: #3c92ba;
+  stroke-width: 4px;
+}
+
+.data-circle {
+  fill: #3c92ba;
+}
+
+.axis-title {
+  text-anchor: end;
+  fill: #5d6971;
+  font-weight: normal;
+}
+
+.axis-tspan {
+  font-size: 12px;
+}
+
+.clinical-cut-off-line {
+  fill: none;
+  stroke: #333333;
+  stroke-dasharray: 8, 8;
+  stroke-width: 4px;
+}
+
+.clinical-cut-off-text {
+  text-transform: uppercase;
+  text-anchor: start;
+  font-size: 12px;
+  font-weight: bold;
+  fill: #333333;
+  stroke: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bars-container-middle {
+  fill: none;
+  stroke: none;
+}
+
+.clinically-significant-pulsing-rect {
+  fill: pink;
+  /* Giving Animation Function */
+  -webkit-animation: pulse 1.5s ease infinite;
+}
+
+/* .bars {
+  max-width: 10px;
+} */

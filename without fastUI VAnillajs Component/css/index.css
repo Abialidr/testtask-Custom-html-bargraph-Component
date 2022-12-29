@@ -1,0 +1,104 @@
+body {
+  background-color: #aaaaaa;
+}
+.mainDiv {
+  margin: 25px;
+  height: 100%;
+  padding: 25px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  margin-right: 25px;
+  width: fit-content;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.inputDiv2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.containerDiv {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #333333;
+  background-color: #666666;
+  margin: 25px;
+  padding: 30px;
+}
+
+.svgMain {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border: 3px dotted #333333;
+  background-color: #666666;
+  margin: 25px;
+  padding: 30px;
+}
+
+.colorDivMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.colorDivSub {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  width: 100%;
+}
+.text {
+  margin: 10px;
+  font-size: x-large;
+}
+
+.colors {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #666666;
+  border: none;
+}
+
+#svg_text {
+  margin: 10px;
+  font-size: x-large;
+}
+
+.grid path {
+  stroke: none;
+}
+
+.grid line {
+  stroke: #e0e0e0;
+  stroke-dasharray: 5px;
+  shape-rendering: crispEdges;
+}
+
+.ColorDiv {
+  margin-top: 8px;
+  display: none;
+  transition: display 1s;
+}
+
+#dateSelect {
+  display: none;
+}
+
+#groupSelect {
+  display: none;
+}

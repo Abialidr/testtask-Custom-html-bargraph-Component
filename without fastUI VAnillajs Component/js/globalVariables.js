@@ -1,0 +1,9 @@
+let rateNames;
+let xaxis;
+let yaxis;
+let categoriesNames;
+let Color;
+let range;
+let value;
+let GroupCheck;
+let DateCheck;

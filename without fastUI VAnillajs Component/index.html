@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>graph</title>
+
+    <!--jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Css Files-->
+    <link href="./css/index.css" rel="stylesheet" />
+    <link href="./css/d3.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700"
+      rel="stylesheet"
+    />
+
+    <!--Fast Components-->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@microsoft/fast-components/dist/fast-components.js"
+    ></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@microsoft/fast-foundation/dist/fast-foundation.js"
+    ></script>
+
+    <!--D3-->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!--LocalFiles-->
+    <script src="./js/globalVariables.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/other.js"></script>
+    <script src="./js/d3.js"></script>
+  </head>
+  <body onload="init()">
+    <div class="mainDiv">
+      <div class="containerDiv">
+        <div class="inputDiv">
+          <label>Name</label>
+          <fast-text-field
+            appearance="primary"
+            name="newTask"
+            placeholder="Enter your todo here"
+            id="inputText"
+          />
+        </div>
+        <div class="inputDiv">
+          <label>X-Axis</label>
+          <fast-select id="xaxis"> </fast-select>
+        </div>
+        <div class="inputDiv">
+          <label>Y-axis</label>
+          <fast-select id="yaxis">
+            <fast-option value="">Choose</fast-option>
+          </fast-select>
+        </div>
+        <div class="ColorDiv" id="ColorDiv">
+          <label style="margin-left: 10px">Colors</label>
+          <div class="colorDivMain" id="colorDivMain"></div>
+        </div>
+        <fast-divider></fast-divider>
+        <div class="text">Aditional options</div>
+        <div class="inputDiv">
+          <div class="inputDiv2">
+            <label>Group By</label>
+            <fast-switch id="group"></fast-switch>
+          </div>
+          <fast-select id="groupSelect"> </fast-select>
+        </div>
+        <div class="inputDiv">
+          <div class="inputDiv2">
+            <label>Date Range</label>
+            <fast-switch id="date"></fast-switch>
+          </div>
+          <fast-select id="dateSelect"> </fast-select>
+        </div>
+      </div>
+      <div class="svgMain">
+        <div id="svg_text" id="svg_text"></div>
+        <svg width="1200" height="700"></svg>
+      </div>
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
+</html>
