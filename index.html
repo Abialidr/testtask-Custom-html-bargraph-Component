@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>graph</title>
+
+    <!--Fast-->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@microsoft/fast-components/dist/fast-components.js"
+    ></script>
+
+    <!-- d3  -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- local -->
+    <script src="./js/utils.js"></script>
+    <script type="module" src="./with Fast UI Right Way/js/containerComponent.js"></script>
+    <script type="module" src="./with Fast UI Right Way/js/controlComponent.js"></script>
+    <script type="module" src="./with Fast UI Right Way/js/d3ChartComponent.js"></script>
+    <script src="./js/data.js"></script>
+
+    <!-- local styles -->
+    <style>
+      body {
+        background-color: #aaaaaa;
+      }
+      .mainDiv {
+        margin: 25px;
+        height: 100%;
+        padding: 25px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        margin-right: 25px;
+        width: fit-content;
+      }
+
+      .containerDiv {
+        display: flex;
+        flex-direction: column;
+        border: 3px solid #333333;
+        background-color: #666666;
+        margin: 25px;
+        padding: 30px;
+      }
+
+      .svgMain {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        border: 3px dotted #333333;
+        background-color: #666666;
+        margin: 25px;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <control-component
+        id="controlcomponent"
+        class="containerDiv"
+      ></control-component>
+      <d3-chart-component id="d3chartcomponent"></d3-chart-component>
+    </div>
+    <!-- <container-component></container-component> -->
+  </body>
+</html>
